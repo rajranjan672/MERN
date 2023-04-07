@@ -12,5 +12,16 @@ router.get(
     ProductController.getProducts
 );
 
+router.put(
+    '/editProduct/:id', 
+    ProductController.editProduct
+);
+
+router.delete(
+    "/deleteProduct/:id", 
+    ProductController.deleteProducts
+);
+
+
 
 module.exports = router;

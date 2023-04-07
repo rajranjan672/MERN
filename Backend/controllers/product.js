@@ -63,3 +63,30 @@ exports.getProducts = async(req, res, next) => {
     });
 };
 
+exports.editProduct = async(req,res) => {
+    var ap = {
+        title: req.body.title,
+        description: req.body.description,
+        price: req.body.price,
+        image: req.body.image,
+    };
+    ProductCollection.findByIdAndUpdate(req.params.id, {
+        $set: ap}, {new: true}, (err, doc) => {
+            if(!err) {res.send(doc);}
+            else {
+                console.log('Error in actionPlan Update: ', + JSON.stringify(err, undefined, 2));
+            }
+        });
+};
+
+exports.deleteProducts = async(req, res, next) => {
+    
+    ProductCollection.findByIdAndDelete((req.params.id), (err, doc) => {
+        if(!err) {
+            res.send(doc);
+        }
+        else {
+            console.log('error in delete: ' +JSON.stringify(err, undefined, 2));
+        }
+    })
+}
