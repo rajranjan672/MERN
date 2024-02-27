@@ -1,12 +1,8 @@
 
 import Typography from '@mui/material/Typography';
 import React, { useState, useEffect } from "react";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import ButtonBase from "@mui/material/ButtonBase";
 import { useNavigate, BrowserRouter, Route, Routes, Outlet, Navigate } from "react-router-dom";
 
-import axios from 'axios';
 import "@fontsource/roboto";
 import "../src/index.css";
 import "./App.css";
@@ -20,11 +16,6 @@ import Footer from './Components/Footer.jsx';
 
 
 function App() {
-
-  const [data, setData] = useState([])
-  const navigate = useNavigate()
-
-
   
   return (
     
