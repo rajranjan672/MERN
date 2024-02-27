@@ -47,19 +47,19 @@ const Footer = () => {
 
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <h6 class="text-uppercase fw-bold mb-4 text-white">
-            Products
+            Foods Types
           </h6>
           <p className='text-white'>
-            <a href="#!" class="text-reset ">Angular</a>
+            <a href="#!" class="text-reset ">Indian</a>
           </p>
           <p className='text-white'>
-            <a href="#!" class="text-reset ">React</a>
+            <a href="#!" class="text-reset ">Chinese</a>
           </p>
           <p className='text-white'>
-            <a href="#!" class="text-reset ">Vue</a>
+            <a href="#!" class="text-reset ">Maxician</a>
           </p>
           <p className='text-white'>
-            <a href="#!" class="text-reset ">Laravel</a>
+            <a href="#!" class="text-reset ">French</a>
           </p>
         </div>
 
@@ -96,7 +96,7 @@ const Footer = () => {
   </section>
 
   <div class="text-center p-4" styles={{"background-color": "black"}}>
-    <a class="text-reset fw-bold text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-reset fw-bold text-white">foods.com</a>
   </div>
 </footer>
     </div>
