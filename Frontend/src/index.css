@@ -1,0 +1,18 @@
+/* @import url('https://fonts.googleapis.com/css?family=Mina'); */
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Mina&display=swap');
+* {
+  /* font-family: 'Dancing Script '  !important; */
+  font-weight:  '400' !important;
+}
+body {
+  font-family: 'Mina ' !important;
+  background-color: #a8b5ce !important;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
