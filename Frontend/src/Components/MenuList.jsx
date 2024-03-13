@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import "./Menu.css"
+import CreateMenu from './CreateMenu'
 
-const Menu = () => {
+const MenuList = () => {
   const [menu, setMenu] = useState([])
 
   useEffect(() => {
@@ -16,7 +17,9 @@ const Menu = () => {
   }
   return (
     <div className='container-fluid menu'>
-      <h2 className='text-center text-danger'>Menu</h2>
+    <CreateMenu gett={gett} />
+
+      <h2 className='text-center text-danger'>MenuList</h2>
       <div className="row">
         {menu.map((item) => {
           return(
@@ -25,9 +28,9 @@ const Menu = () => {
               <h3 className='text-center'>{item.title}</h3>
             </div>
             <div className="card-body">
-              <p>{item.description}</p>
+              <h4>Description: {item.description}</h4>
             </div>
-            <button className="btn btn-primary col-4 mb-1">RS 120</button>
+            <button className="btn btn-primary col-4 mb-1">RS: {item.price}</button>
             </div>
           )
         })}
@@ -38,4 +41,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default MenuList

@@ -5,6 +5,8 @@ const bodyparser = require('body-parser');
 const cookie = require("cookie-parser")
 
 const app = express();
+app.use('/images', express.static('images'))
+
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://127.0.0.1:27017/courses', {

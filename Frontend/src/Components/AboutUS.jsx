@@ -41,7 +41,7 @@ const About = () => {
             About Us
           </p>
           <Typing speed={6}>
-            <h3>
+            <h3 className="text-warning">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero,
               accusamus reiciendis sequi, fugiat mollitia accusantium
               necessitatibus corporis praesentium quis qui esse veritatis

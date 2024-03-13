@@ -1,10 +1,11 @@
 import React from 'react'
+import "./Footer.css"
 
 const Footer = () => {
   return (
-    <div>
+    <>
         
-<footer class="text-center text-white text-lg-start text-muted bg-black">
+<footer class="text-center text-white text-lg-start text-muted bg-black ">
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <div class="me-5 d-none d-lg-block">
       <span className='text-white'>Get connected with us on social networks:</span>
@@ -99,7 +100,7 @@ const Footer = () => {
     <a class="text-reset fw-bold text-white">foods.com</a>
   </div>
 </footer>
-    </div>
+    </>
   )
 }
 

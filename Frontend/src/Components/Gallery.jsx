@@ -2,7 +2,6 @@ import React from 'react'
 import food from "../Assets/food.png"
 import food1 from "../Assets/food1.png"
 import fries from "../Assets/fries.png"
-import "./Menu"
 
 const Gallery = () => {
   return (
