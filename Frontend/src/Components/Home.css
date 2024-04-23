@@ -1,0 +1,9 @@
+.home {
+    background-color: hsl(295, 26%, 81%);
+    min-height: 100vh !important;
+}
+
+.home .card {
+    height: 200px !important;
+    overflow: hidden !important;
+}

@@ -1,42 +1,37 @@
+import React from 'react'
+import Landing from './Components/Landing'
+import {BrowserRouter, Navigate, Route, Router, Routes} from "react-router-dom"
+import Login from './Components/Login'
+import SignUp from './Components/SignUp'
+import Home from './Components/Home'
+import Header from './Components/Header'
+import Breakfast from './Components/Breakfast'
+import NavBar from './Router/NavBar'
 
-import Typography from '@mui/material/Typography';
-import React, { useState, useEffect } from "react";
-import { useNavigate, BrowserRouter, Route, Routes, Outlet, Navigate } from "react-router-dom";
-
-import "@fontsource/roboto";
-import "../src/index.css";
-import "./App.css";
-import Home from './Components/Home';
-import NavBar from './Router/NavBar';
-import MenuList from './Components/MenuList';
-import Gallery from './Components/Gallery.jsx';
-import AboutUS from './Components/AboutUS';
-import Footer from './Components/Footer.jsx';
-
-
-
-function App() {
-  
+const App = () => {
   return (
-    
     <>
-    <div>
-       <NavBar/>
-    
-      <Routes>
-       <Route path="/" element={<Navigate to="/home"/>} />
-        <Route path="/home" defaults element={<Home />} />
-        <Route path="/menu" defaults element={<MenuList />} />
-        <Route path="/gallery" defaults element={<Gallery />} />
-        <Route path='/about' element={<AboutUS />}  />
+    <BrowserRouter>
+    <NavBar />    
+    <Routes>
+    <Route path="/" element={<Navigate to="/landing"/>} />
+      <Route path="/landing" element={<Landing />} />
+          
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/home/breakfast" element={<Breakfast />} />
 
-      </Routes>
-    </div>
-     <>
-     </>
-     <Outlet />
+
+
+      
+    </Routes>
+    </BrowserRouter>  
+
+
+    
     </>
-  );
+  )
 }
 
-export default App;
+export default App

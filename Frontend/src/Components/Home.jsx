@@ -1,101 +1,56 @@
-import { Paper } from "@mui/material";
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import food from "../Assets/food.png";
-import money from "../Assets/money.jpg"
+import React, { useState } from 'react'
+import { Paper } from '@mui/material'
+import dessert from "./../Assets/Full_English_breakfast1.png"
+import breakfast from "./../Assets/easy-lunch-ideas.png"
+import lunch from "./../Assets/easy-lunch-ideas (1).png"
 
-const Home = (props) => {
+
+import "../Components/Home.css"
+import { useNavigate } from 'react-router-dom'
+const Home = () => {
+
+    const navigate = useNavigate()
+    const dessertt = () => {
+        navigate("/home/breakfast")
+    }
   return (
     <>
-      <div className="container-fluid">
-        <div className="text-center">
-        <h2 className="text-primary">Our Services</h2>
-          
-        </div>
-        <div className="row">
-            <div className="col-10 col-sm-10 col-md-6 col-lg-8">
-              
-            <h4 className="text-success">Fresh Foods</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, pariatur id commodi maiores mollitia et veniam
-              aliquam rem explicabo cupiditate perspiciatis, corrupti corporis!
-              Atque ratione iusto necessitatibus, sapiente optio corrupti esse
-              sed inventore, quas illo fugit beatae molestiae, explicabo
-              pariatur aperiam dolor totam? Nobis at ullam voluptate, illo id
-              sint eos unde repellendus debitis ab necessitatibus nostrum
-              eligendi eaque? Recusandae id optio cupiditate, nostrum nobis
-              architecto magni, omnis, eveniet eum dolorem illum fugit
-              perspiciatis veritatis. Maxime animi alias amet necessitatibus
-              placeat. Magnam expedita eius vitae, id fugit ipsum tempora ad,
-              provident qui commodi a et, cumque corrupti itaque tempore
-              ratione!
-            </p>
+    <div className="home">
+    <div className="container-fluid">
+        <div className="row g-0 m-0">
+            <div className='col-10 col-sm-5 col-md-5 col-lg-3 my-3 mx-2 p-0' onClick={dessertt}>
+
+            <Paper elevation={5} className='card' >
+                <img src={dessert} sizes='100%'/>
+            </Paper>
+            <p className='text-center text-white font-weight-bold'>Dessert</p>
             </div>
-            <div className="col-8 col-sm-10 col-md-3 col-lg-3 ms-4 mt-2">
-              <img src={food} alt=""  />
-          </div>
-        </div>
 
-        <hr />
+            <div className='col-10 col-sm-5 col-md-5 col-lg-3 my-3 mx-3 p-0'>
 
-        <div className="row">
-        <div className="col-10 col-sm-12 col-md-3 col-lg-3 me-4">
-              <img src={food} alt=""  />
-          </div>
-            <div className="col-10 col-sm-10 col-md-6 col-lg-8 ms-5">
-              
-            <h4>Fresh Foods</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, pariatur id commodi maiores mollitia et veniam
-              aliquam rem explicabo cupiditate perspiciatis, corrupti corporis!
-              Atque ratione iusto necessitatibus, sapiente optio corrupti esse
-              sed inventore, quas illo fugit beatae molestiae, explicabo
-              pariatur aperiam dolor totam? Nobis at ullam voluptate, illo id
-              sint eos unde repellendus debitis ab necessitatibus nostrum
-              eligendi eaque? Recusandae id optio cupiditate, nostrum nobis
-              architecto magni, omnis, eveniet eum dolorem illum fugit
-              perspiciatis veritatis. Maxime animi alias amet necessitatibus
-              placeat. Magnam expedita eius vitae, id fugit ipsum tempora ad,
-              provident qui commodi a et, cumque corrupti itaque tempore
-              ratione!
-            </p>
+            <Paper elevation={5} className='card' >
+                <img src={breakfast} width={"100%"} />
+            </Paper>
+            <p className='text-center text-white'>Breakfast</p>
             </div>
-           
+
+            <div className='col-10 col-sm-5 col-md-5 col-lg-3 my-3 mx-3 p-0'>
+
+                <Paper elevation={5} className='card' >
+                    <img src={lunch} width={"100%"} />
+                </Paper>
+                <p className='text-center text-white'>Lunch</p>
+                </div>
+
+
+            
+
         </div>
-
-        <hr />
-
-         <div className="row">
-            <div className="col-10 col-sm-10 col-md-6 col-lg-8">
-              
-            <h4>Cost Effective</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, pariatur id commodi maiores mollitia et veniam
-              aliquam rem explicabo cupiditate perspiciatis, corrupti corporis!
-              Atque ratione iusto necessitatibus, sapiente optio corrupti esse
-              sed inventore, quas illo fugit beatae molestiae, explicabo
-              pariatur aperiam dolor totam? Nobis at ullam voluptate, illo id
-              sint eos unde repellendus debitis ab necessitatibus nostrum
-              eligendi eaque? Recusandae id optio cupiditate, nostrum nobis
-              architecto magni, omnis, eveniet eum dolorem illum fugit
-              perspiciatis veritatis. Maxime animi alias amet necessitatibus
-              placeat. Magnam expedita eius vitae, id fugit ipsum tempora ad,
-              provident qui commodi a et, cumque corrupti itaque tempore
-              ratione!
-            </p>
-            </div>
-            <div className="col-10 col-sm-10 col-md-4 col-lg-3 ms-4">
-              <img src={money} alt=""  />
-          </div>
-        </div>
-
-        <hr />
-      </div>
+    </div>
+    </div>
+   
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

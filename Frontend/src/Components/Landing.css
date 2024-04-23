@@ -1,0 +1,7 @@
+.landing {
+    /* background: #fcff4e; */
+    background-image: url("../Assets/favicon.ico") !important;
+
+    background: -webkit-linear-gradient(right, #5CD9CA, #F167E3) !important;
+    background: linear-gradient(to left, #BD6CB5, #5CD9CA) !important;
+}
