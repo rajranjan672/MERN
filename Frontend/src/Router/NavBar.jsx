@@ -10,7 +10,6 @@ import favicon from "../Assets/favicon.ico";
 
 
 const NavBar = ({setAuth,auth, data}) => {
-  const [isNav, setIsNav] = useState(false)
   const [showNavbar, setShowNavbar] = useState(false)
   const [search, setSearch] = useState(false)
 
@@ -37,10 +36,10 @@ const handleShowNavbar = () => {
          <ul>
          <li className='mx-1'><img src={favicon} width={"40vw"}/> </li>
 
-             <li><NavLink to="/home" className=" nav-item bi bi-house-door col-2 h4" onClick={handleShowNavbar}></NavLink></li>
-
-             <li><NavLink to="/about" className=" nav-item bi bi-heart-fill h4" onClick={handleShowNavbar}></NavLink></li>
-             {/* <li><NavLink to="/quiz" className=" nav-item" onClick={handleShowNavbar}>QUIZ</NavLink></li> */}
+             <li className='m-auto'><NavLink to="/home" className="nav-item bi bi-house-door col-2 h4 " onClick={handleShowNavbar}></NavLink></li>
+            
+             <li className='m-auto'><NavLink to="/about" className=" nav-item bi bi-heart-fill h4" onClick={handleShowNavbar}></NavLink></li>
+             <li className='m-auto'><NavLink to="/quiz" className=" nav-item bi bi-cart h4" onClick={handleShowNavbar}></NavLink></li>
 
             
         
@@ -50,11 +49,30 @@ const handleShowNavbar = () => {
          </div>
 
 
-         <div className='d-flex float-end'>
+         <div className='d-flex float-end me-3'>
          {search && <input type="search" />}
-             <i className=' bi bi-search justify-content-end' onClick={searched}></i>             
+             <i className=' bi bi-search w-auto px-2' onClick={searched}></i>             
+             {/* <NavLink className="profile me-2"><i className="bi bi-person-circle text-black"></i></NavLink> */}
+             <ul className='p-0'>
+    <div className="dropdown " style={{float: "right"}}>
+  <i className=" bi bi-person-circle dropbtn"></i>
 
+  <div className="dropdown-content">
+    <h3 className='mx-auto bi bi-person-circle'></h3>
+   <NavLink to="/a" className="profile bi bi-telephone-fill w-100 my-1"><span className='text-black'>Help Center</span> </NavLink>
+    <NavLink to="/profile/none" className="profile  bi bi-person-circle w-100 my-1"><span></span> Choose Language</NavLink>
+    <NavLink to="/profile/none" className="profile bi bi-translate w-100 my-1"><span className='text-black'> Your Favourites</span></NavLink>
+    <NavLink to="/profile/none" className="profile bi bi-info-lg w-100 my-1"><span className='text-black'> About</span> </NavLink>
+    <NavLink to="/profile/none" className="profile bi bi-person-circle w-100 my-1"><span className='text-black' >Send Feedback</span> </NavLink>
+    <NavLink to="/profile/none" className="profile bi bi-gear-fill w-100 my-1"><span className='text-black'> Settings</span> </NavLink>
+    <NavLink to="/profile/none" className="profile bi bi-box-arrow-right w-100 my-1 logout"> <span className='text-black'> Log Out</span></NavLink>
+
+
+  </div>
+</div>
+    </ul>
              </div>
+
 
              {/* <ul>
     <div className="dropdown" style={{float: "right"}}>

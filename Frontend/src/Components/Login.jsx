@@ -27,7 +27,7 @@ const Login = () => {
     <><div className="login">
        <div className="container-fluid">
         <div className="row">
-            <div className="card col-5 mx-auto mt-5">
+            <div className="card col-10 col-sm-10 col-md-6 col-lg-6 mx-auto mt-5">
                 <div className="card-title mx-auto pt-4">
                     <img src={favicon}  width={"70vw"}/>
                 </div>

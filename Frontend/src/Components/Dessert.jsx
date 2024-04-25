@@ -2,12 +2,12 @@ import React from 'react';
 import Paper from "@mui/material/Paper"
 import "../Components/Breakfast.css"
 
-const Breakfast = () => {
+const Dessert = () => {
   return (
     <>
     <div className="breakfast">
     <div className='container-fluid'>
-      <h2 className='text-center'>Breakfast</h2>
+      <h2 className='text-center'>Dessert</h2>
         <div className="row">
         <div class=" cardd col-10 col-sm-10 col-md-3 col-lg-3 mt-2 mx-5">
     <div class="image">
@@ -95,4 +95,4 @@ const Breakfast = () => {
   
 }
 
-export default Breakfast
+export default Dessert

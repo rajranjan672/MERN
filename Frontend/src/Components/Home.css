@@ -6,4 +6,5 @@
 .home .card {
     height: 200px !important;
     overflow: hidden !important;
+    cursor: pointer;
 }
