@@ -8,3 +8,7 @@
     overflow: hidden !important;
     cursor: pointer;
 }
+
+.home .hover:hover {
+    transform: scale(1.05);
+}

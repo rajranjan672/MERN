@@ -49,21 +49,21 @@ const handleShowNavbar = () => {
          </div>
 
 
-         <div className='d-flex float-end me-3'>
+         <div className='d-flex float-end me-5'>
          {search && <input type="search" />}
-             <i className=' bi bi-search w-auto px-2' onClick={searched}></i>             
+             <i className=' bi bi-search h4 w-auto px-3' onClick={searched}></i>             
              {/* <NavLink className="profile me-2"><i className="bi bi-person-circle text-black"></i></NavLink> */}
              <ul className='p-0'>
     <div className="dropdown " style={{float: "right"}}>
-  <i className=" bi bi-person-circle dropbtn"></i>
+  <i className=" bi bi-person-circle h4 dropbtn"></i>
 
   <div className="dropdown-content">
     <h3 className='mx-auto bi bi-person-circle'></h3>
-   <NavLink to="/a" className="profile bi bi-telephone-fill w-100 my-1"><span className='text-black'>Help Center</span> </NavLink>
-    <NavLink to="/profile/none" className="profile  bi bi-person-circle w-100 my-1"><span></span> Choose Language</NavLink>
-    <NavLink to="/profile/none" className="profile bi bi-translate w-100 my-1"><span className='text-black'> Your Favourites</span></NavLink>
+   <NavLink to="/a" className="profile bi bi-telephone-fill w-100 my-1"><span className='text-black'> Help Center</span> </NavLink>
+    <NavLink to="/profile/none" className="profile  bi bi-translate w-100 my-1"><span></span> Choose Language</NavLink>
+    <NavLink to="/profile/none" className="profile bi bi-heart-fill w-100 my-1"><span className='text-black'> Your Favourites</span></NavLink>
     <NavLink to="/profile/none" className="profile bi bi-info-lg w-100 my-1"><span className='text-black'> About</span> </NavLink>
-    <NavLink to="/profile/none" className="profile bi bi-person-circle w-100 my-1"><span className='text-black' >Send Feedback</span> </NavLink>
+    <NavLink to="/profile/none" className="profile bi bi-person-circle w-100 my-1"><span className='text-black' > Send Feedback</span> </NavLink>
     <NavLink to="/profile/none" className="profile bi bi-gear-fill w-100 my-1"><span className='text-black'> Settings</span> </NavLink>
     <NavLink to="/profile/none" className="profile bi bi-box-arrow-right w-100 my-1 logout"> <span className='text-black'> Log Out</span></NavLink>
 

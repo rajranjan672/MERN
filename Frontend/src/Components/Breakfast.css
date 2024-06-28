@@ -90,3 +90,19 @@
 .breakfast .cardd .details .center ul li a:hover {
     background: #ff3636;
 }
+ .watermark:after {
+        content: "";
+        display: block;
+        pointer-events: none;
+        width: 410px;
+        height: 250px;
+        position: absolute;
+        top: 50%;
+        right: 50%;      
+        background-image: url("../Assets/alimento-high-resolution-logo\ \(2\).png");
+        /* background-size: auto; */
+        /* background-position: 30px 30px; */
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        border-radius: 50px !important;
+      }

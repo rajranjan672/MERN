@@ -1,0 +1,25 @@
+/* .home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh !important;
+    background-color: white;
+}
+
+.home-panel-wrap, .home-panelList-wrap, .home.home-list-wrap {
+    overflow-y: auto;
+} 
+
+.home-panelList-wrap {
+    display: flex;
+    flex: 1;
+}
+
+.home-panel-wrap {
+    flex-basis: 200px;
+}
+
+
+.home-list-wrap {
+    flex: 1;
+}
+ */

@@ -5,7 +5,7 @@ import "../Components/Breakfast.css"
 const Breakfast = () => {
   return (
     <>
-    <div className="breakfast">
+    <div className="breakfast watermark">
     <div className='container-fluid'>
       <h2 className='text-center'>Breakfast</h2>
         <div className="row">

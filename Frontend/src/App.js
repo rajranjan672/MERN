@@ -3,13 +3,14 @@ import Landing from './Components/Landing'
 import {BrowserRouter, Navigate, Route, Router, Routes} from "react-router-dom"
 import Login from './Components/Login'
 import SignUp from './Components/SignUp'
-import Home from './Components/Home'
+import Home from './Components/Home/Home'
 import Header from './Components/Header'
 import Breakfast from './Components/Breakfast'
 import NavBar from './Router/NavBar'
 import Dessert from './Components/Dessert'
 import SoftDrinks from './Components/SoftDrinks'
 import Lunch from './Components/Lunch'
+import About from './Components/About/About'
 
 const App = () => {
   return (
@@ -27,6 +28,8 @@ const App = () => {
       <Route path="/home/dessert" element={<Dessert />} />
       <Route path="/home/softdrinks" element={<SoftDrinks />} />
       <Route path="/home/lunch" element={<Lunch />} />
+      <Route path="/about" element={<About />} />
+
 
 
 
